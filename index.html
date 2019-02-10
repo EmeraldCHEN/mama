@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Pig Dice</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,600" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="test.css">  
+        
+</head>
+<body>
+       
+    <div class="wrapper clearFix">
+            
+            <div class="pyro" id="firework2" style="display:none;">
+    
+                    <div class="before"></div>
+                    <div class="after"></div>
+            </div>
+     
+        <div class="player_0_panel active">
+            <div class="player_name" id="name_0">妈妈</div>
+            <div class="player_score" id="score_0">42</div>
+            <div class="player_current_box" id="box1">
+                
+                <div class="player_current_score" id="current_0">11</div>
+                <div class="player_current_label">点</div>
+            </div>
+        </div>
+
+        <div id="win" style="text-align:center; display: none;">赢啦！</div>
+        
+        <div class="pyro" id="firework1" style="display:none;">
+    
+                <div class="before"></div>
+                <div class="after"></div>
+        </div>
+        <div class="player_1_panel">
+            <div class="player_name" id="name_1">姐姐</div>
+            <div class="player_score" id="score_1">62</div>
+            <div class="player_current_box" id="box2">
+               
+                <div class="player_current_score" id="current_1">1</div>
+                <div class="player_current_label">点</div>
+            </div>
+        </div>
+        
+       
+
+        
+
+   
+
+        <img src="image/peppa pig.PNG" alt="Pig" class="pig" width="30%" >
+         
+        <a href = "javascript:void(0)" onclick = "document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block'">
+          
+        <i class="material-icons" >help</i></a>
+        <div id="light" class="white_content">
+            <h3 align="center">Game Rules</h3>
+            <br>
+            <li>In each turn, a player rolls a dice as many times as he/she whishes</li> 
+            <li> Each result get added to his/her ROUND score</li>
+            <li>BUT, if the player rolls a 1, all his/her ROUND score gets lost </li> 
+            <li> After that, it's the next player's turn</li>
+            <li>The player can choose to 'Hold', which means that his/her ROUND score gets added to his/her TOTAL score</li> 
+            <li> After that, it's the next player's turn</li>
+            <li>The first player to reach 8 or more points wins </li>
+            
+            <h4 align="right"><a href = "javascript:void(0)" onclick = "document.getElementById('light').style.display='none';document.getElementById('fade').style.display='none'">Close</a></h4>
+        </div> 
+        <div id="fade" class="black_overlay"></div>
+            
+
+
+     
+        <button onclick="gameInitialization()" class="btn_new">再玩一次</button>
+        <button id="btn_roll">掷骰子</button>
+        <button id="btn_hold">你玩，我歇会儿 (๑′ᴗ‵๑)    Ｉ Lᵒᵛᵉᵧₒᵤ❤</button>
+
+        <!-- <input type="text" placeholder="Final score" class="final_score"> -->
+        <img src="image/dice-5.png" alt="Dice" class="dice" id="dice_1" width="30%" height="35%">
+        <!-- <img src="image/dice-5.png" alt="Dice" class="dice" id="dice_2"> -->
+        <audio id="myAudio">
+            <source src="mySound.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+   
+    <script src="Pig_Dice_Game.js"></script> 
+  
+</body>
+</html>
