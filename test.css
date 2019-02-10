@@ -81,9 +81,9 @@
     -webkit-transform:translate(76%, -100%);
 }
 .player_current_box {
-    transform: translate(-30%,-55%);
-    -ms-transform:translate(-30%,-55%);
-    -webkit-transform:translate(-30%,-55%);
+    transform: translate(-30%,-48%);
+    -ms-transform:translate(-30%,-48%);
+    -webkit-transform:translate(-30%,-48%);
 }
 
 
